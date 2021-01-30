@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.kpxd.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_SaveList"
+        android:orderInCategory="100"
+        android:title="Save List"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_LoadList"
+        android:orderInCategory="100"
+        android:title="Load List"
+        app:showAsAction="never" />
+    <item
+    android:id="@+id/action_AddName"
+    android:orderInCategory="100"
+    android:title="Add Name"
+    app:showAsAction="never" />
+</menu>

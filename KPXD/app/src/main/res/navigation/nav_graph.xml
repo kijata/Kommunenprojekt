@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/matrix_view">
+    <fragment
+        android:id="@+id/matrix_view"
+        android:name="com.example.kpxd.matrix_view"
+        android:label="MatrixMain"
+        tools:layout="@layout/matrix_view">
+        <action
+            android:id="@+id/action_matrix_view_to_config_view"
+            app:destination="@id/config_view" />
+        <action
+            android:id="@+id/action_matrix_view_to_list_view"
+            app:destination="@id/list_view" />
+    </fragment>
+    <fragment
+        android:id="@+id/config_view"
+        android:name="com.example.kpxd.config"
+        android:label="ConfigMain"
+        tools:layout="@layout/config">
+    </fragment>
+    <fragment
+        android:id="@+id/list_view"
+        android:name="com.example.kpxd.list_view"
+        android:label="ListView"
+        tools:layout="@layout/list_view">
+        <action
+            android:id="@+id/action_list_view_to_matrix_view"
+            app:destination="@id/matrix_view" />
+        <action
+            android:id="@+id/action_list_view_to_entry_view"
+            app:destination="@id/entry_view" />
+        <action
+            android:id="@+id/action_list_view_to_entry_change"
+            app:destination="@id/entry_change" />
+        <action
+            android:id="@+id/action_list_view_to_config_view"
+            app:destination="@id/config_view" />
+    </fragment>
+    <fragment
+        android:id="@+id/entry_change"
+        android:name="com.example.kpxd.entry_change"
+        android:label="EntryChange"
+        tools:layout="@layout/entry_change">
+        <action
+            android:id="@+id/action_entry_change_to_config_view"
+            app:destination="@id/config_view" />
+    </fragment>
+    <fragment
+        android:id="@+id/entry_view"
+        android:name="com.example.kpxd.entry_view"
+        android:label="EntryView"
+        tools:layout="@layout/entry_view">
+        <action
+            android:id="@+id/action_entry_view_to_list_view"
+            app:destination="@id/list_view" />
+        <action
+            android:id="@+id/action_entry_view_to_entry_change"
+            app:destination="@id/entry_change" />
+        <action
+            android:id="@+id/action_entry_view_to_config_view"
+            app:destination="@id/config_view" />
+    </fragment>
+
+</navigation>
